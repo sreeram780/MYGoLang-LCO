@@ -37,4 +37,11 @@ func main() {
 	fmt.Println("highScores after sorting", highScores)
 	fmt.Println("are highScores sorted? - Ans:", sort.IntsAreSorted(highScores))
 
+	// How to remmove value from slice based on index
+	var courses = []string{"Java", "c", "c++", "Script", "Obj-c", "Swift", "Go", "Python"}
+	fmt.Println("All courses", courses)
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println("All courses after deleing inex at 2", courses)
+
 }
