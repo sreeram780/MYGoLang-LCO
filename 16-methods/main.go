@@ -16,7 +16,7 @@ func main() {
 	fmt.Printf("Name is %v and mail %v \n", sree.Name, sree.Email)
 	// calling method
 	sree.GetStatus()
-	// updating prop
+	// updating/ manipulates prop
 	sree.NewMail()
 }
 
